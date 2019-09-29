@@ -1,0 +1,5 @@
+//LPF portat al limit
+{LPF.ar(LFPar.ar(440,0,0.1), SinOsc.ar(1,0,1000,400))!2}.freqscope
+
+// blip amb nombre de freq variable
+{Blip.ar(300,Line.kr(10,1,1))}.play
