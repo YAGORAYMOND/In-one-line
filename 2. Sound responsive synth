@@ -1,0 +1,2 @@
+//Sound distortion if you are not in silence :)
+{inf.do{[3,2,3,2,4].do{|i,j|{SinOsc.ar(([200,300,100,200,300][j])+Pitch.kr(SoundIn.ar,100,100,200),0,0.2)*EnvGen.ar(Env([0,1,0],[1,3]),doneAction:2)!2}.play;i.wait};1.wait}}.fork
